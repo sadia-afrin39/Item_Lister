@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<title>Item Lister</title>
+        <!-- <link rel='shortcut icon' type='image/x-icon' href='resources/img/favicon.png'>   -->
+		<meta name="viewport" content="width = device-width, initial-scale=1.0">
+        <meta name="description" content="DOM manipulation">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--for ie & edge support -->
+		<meta name="author" content="Sadia Afrin Tarin">
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+		
+		<!--<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/> used for animation on scroll-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<!--<script src="../travelBD/js/all.min.js"></script>-->
+		<!--<script src="Prefix_Free.js"></script>   if js not supported in browser-->
+		<!--<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel='stylesheet'>-->	
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	</head>
+	
+	<body>
+        <header id="main-header" class="bg-success text-white p-4 mb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 id="header-title">Item Lister</h1>
+                    </div>
+                    <div class="col-md-6 align-self-center">
+                        <input type="text" class="form-control" id="filter" placeholder="Search Items...">
+                    </div>
+                </div>
+            </div>
+        </header>  
+        
+        <div class="container">
+            <div id="main" class="card card-body">
+                <h2 class="title">Add Items</h2>
+                <form id="addform" class="form-inline mb-3">
+                    <input type="text" class="form-control mr-2" id="item">
+                    <input type="submit" class="btn btn-dark" value="submit">
+                </form>
+                <h2 class="title">Items</h2>
+                <ul id="items" class="list-group">
+                    <li class="list-group-item">Sadia<button class="btn btn-danger btn-sm float-right delete">X</button></li>
+                    <li class="list-group-item">Afrin<button class="btn btn-danger btn-sm float-right delete">X</button></li>
+                    <li class="list-group-item">Tarin<button class="btn btn-danger btn-sm float-right delete">X</button></li>
+                    <li class="list-group-item">Sayma<button class="btn btn-danger btn-sm float-right delete">X</button></li>
+                </ul>
+                <button class="btn btn-dark btn-block" id="button">Click Here</button>
+            </div>
+        </div>
+        
+        <script defer src="main.js"></script>
+    </body>
+</html>
